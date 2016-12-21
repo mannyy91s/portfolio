@@ -1,4 +1,8 @@
-document.getElementById('about').addEventListener('click', () => {
-    window.scrollBy(0,500)
-})
-window.sr = ScrollReveal().reveal('.about-section');
+
+window.sr = ScrollReveal({reset:true}).reveal('img,h1,ul');
+
+$("#projects").sliphover({
+    target: 'img',
+    fontColor: '#fff',
+    caption: 'data-caption',
+});

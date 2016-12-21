@@ -12,68 +12,97 @@ img{
     background-attachment: fixed;
     h1{
     font-family: AmericanTypewriter;
-    font-size: 120px;
-    color: #FFFFFF;
+    font-size: 90px;
+    color: white;
+    }
+    h2{
+        font-family: AmericanTypewriter;
+        color: white;
     }
     img{
-        margin-top: 250px;
+        margin-top: 200px;
         opacity: 0.89;
         border-radius: 100%;
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 300px;
+        max-height: 300px;
     }
 }
-.nav{
-    text-align: center;
-    width: 100%;
-    background: #E1DDC6;
-    opacity: .7;
-    position: fixed;
-    z-index: 10;
+.page1-contact{
     ul{
+        list-style: none;
         display: inline-block;
+        padding-right: 55px;
         li{
-            font-family: AmericanTypewriter;
-            color: #40333A;
+            font-size: 40px;
+            margin: 10px;
             display: inline-block;
-            list-style: none;
-            font-size: 50px;
-            letter-spacing: 2px;
-            padding-right: 20px;
-            &:hover{
-                background: seagreen;
-                cursor: pointer;
+            a{
+                color: #244345;
             }
         }
     }
 }
+.resume-button{
+    background: #244345;
+    color: white;
+    font-family: AmericanTypewriter;
+    &:hover{
+        background: #E1DDC6;
+        color: #244345;
+    }
+}
 .page2{
     height: 100%;
+    background: #E1DDC6;
+    color: #244345;
+    h1{
+        font-size: 90px;
+        font-family: AmericanTypewriter;
+    }
     ul{
         display: inline-block;
         list-style: none;
         padding: 10px;
         li{
             display: inline-block;
-            height: 200px;
-            width: 200px;
             margin: 10px;
             padding: 10px;
+            i{
+                font-size: 120px;
+            }
         }
     }
 }
 .page3{
-    background: url(../images/mapping.jpg);
-    height: 60vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #244345;
+    height: 100%;
     padding: 20px;
     h1{
-        color: white;
+        color: #E1DDC6;
+        font-family: AmericanTypewriter;
+        font-size: 90px;
     }
     img{
-        height: 300px;
-        width: 400px;
+        padding: 5px;
+        width: 100%;
+        height: 500px;
+    }
+}
+@media (max-width: 768px){
+    .page1{
+        h1{
+            font-size: 60px;
+        }
+    }
+    .page3{
+        img{
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .page1{
+        height: 100%
     }
 }
