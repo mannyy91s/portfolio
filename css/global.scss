@@ -5,7 +5,7 @@ img{
     width: 100%;
 }
 .page1{
-    background: url(../images/desk2-1920.jpeg);
+    background: url(https://mannyy91s.github.io/portfolio/images/desk2-1920.jpeg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,12 +99,10 @@ img{
     }
     ul{
         list-style: none;
-        // display: inline-block;
         padding-right: 55px;
         li{
             font-size: 20px;
             margin: 10px;
-            // display: inline-block;
             a{
                 color: #244345;
                 &:hover{
@@ -124,11 +122,5 @@ img{
         img{
             height: auto;
         }
-    }
-}
-
-@media (max-width: 375px){
-    .page1{
-        height: 100%
     }
 }
