@@ -137,6 +137,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .page1 {
+    background-attachment: inherit;
+  }
   .page1 h1 {
     font-size: 60px;
   }
