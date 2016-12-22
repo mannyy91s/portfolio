@@ -8,7 +8,7 @@ img {
 
 .page1 {
   background: url(../images/desk2-1920.jpeg);
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,6 +47,10 @@ img {
 
 .page1-contact ul li a {
   color: #244345;
+}
+
+.page1-contact ul li a:hover {
+  color: #40333A;
 }
 
 .resume-button {
@@ -103,6 +107,33 @@ img {
   padding: 5px;
   width: 100%;
   height: 500px;
+}
+
+.page4 {
+  background: #E1DDC6;
+}
+
+.page4 h2 {
+  font-family: AmericanTypewriter;
+  color: #244345;
+}
+
+.page4 ul {
+  list-style: none;
+  padding-right: 55px;
+}
+
+.page4 ul li {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.page4 ul li a {
+  color: #244345;
+}
+
+.page4 ul li a:hover {
+  color: #40333A;
 }
 
 @media (max-width: 768px) {
