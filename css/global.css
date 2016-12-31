@@ -7,26 +7,32 @@ img {
 }
 
 .page1 {
-  background: url(https://mannyy91s.github.io/portfolio/images/desk2-1920.jpeg);
+  background: #555557;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 60px;
+}
+
+.page1 .page1-box {
+  background: white;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  width: 400px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.page1 h1 {
+.page1 .page1-box h1 {
   font-family: AmericanTypewriter;
-  font-size: 90px;
-  color: white;
+  font-size: 60px;
+  color: #ED6A5A;
 }
 
-.page1 h2 {
-  font-family: AmericanTypewriter;
-  color: white;
+.page1 .page1-box h2 {
+  color: #ED6A5A;
 }
 
-.page1 img {
-  margin-top: 200px;
+.page1 .page1-box img {
   opacity: 0.89;
   border-radius: 100%;
   max-width: 300px;
@@ -40,34 +46,36 @@ img {
 }
 
 .page1-contact ul li {
-  font-size: 40px;
+  font-size: 45px;
   margin: 10px;
   display: inline-block;
 }
 
 .page1-contact ul li a {
-  color: #244345;
+  color: #ED6A5A;
 }
 
 .page1-contact ul li a:hover {
-  color: #40333A;
+  color: #555557;
 }
 
 .resume-button {
-  background: #244345;
+  background: #ED6A5A;
   color: white;
   font-family: AmericanTypewriter;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .resume-button:hover {
-  background: #E1DDC6;
-  color: #244345;
+  background: #555557;
+  color: #ED6A5A;
 }
 
 .page2 {
   height: 100%;
-  background: #E1DDC6;
-  color: #244345;
+  background: #ED6A5A;
+  background-attachment: fixed;
+  color: #ecf0f1;
 }
 
 .page2 h1 {
@@ -92,13 +100,13 @@ img {
 }
 
 .page3 {
-  background: #244345;
+  background: #5CA4A9;
   height: 100%;
   padding: 20px;
 }
 
 .page3 h1 {
-  color: #E1DDC6;
+  color: white;
   font-family: AmericanTypewriter;
   font-size: 90px;
 }
@@ -110,12 +118,12 @@ img {
 }
 
 .page4 {
-  background: #E1DDC6;
+  background: #E6EBE0;
 }
 
 .page4 h2 {
   font-family: AmericanTypewriter;
-  color: #244345;
+  color: #5CA4A9;
 }
 
 .page4 ul {
@@ -129,19 +137,29 @@ img {
 }
 
 .page4 ul li a {
-  color: #244345;
+  color: #5CA4A9;
 }
 
 .page4 ul li a:hover {
-  color: #40333A;
+  color: #5CA4A9;
 }
 
 @media (max-width: 768px) {
-  .page1 {
-    background-attachment: inherit;
+  .page1 .page1-box {
+    height: 100%;
+    width: 100%;
   }
-  .page1 h1 {
-    font-size: 60px;
+  .page1 .page1-box h1 {
+    font-size: 40px;
+  }
+  .page1 .page1-box h2 {
+    font-size: 25px;
+  }
+  .page1-contact ul li {
+    font-size: 25px;
+    margin: 0;
+    padding: 3px;
+    padding-top: 18px;
   }
   .page3 img {
     height: auto;

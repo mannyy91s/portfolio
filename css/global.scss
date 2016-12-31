@@ -1,3 +1,10 @@
+//color pallet
+$col1: #555557;
+$col2: #ED6A5A;
+$col3: #5CA4A9;
+$col4: #E6EBE0;
+$w: white;
+
 *{
     box-sizing: border-box;
 }
@@ -5,26 +12,31 @@ img{
     width: 100%;
 }
 .page1{
-    background: url(https://mannyy91s.github.io/portfolio/images/desk2-1920.jpeg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    h1{
-    font-family: AmericanTypewriter;
-    font-size: 90px;
-    color: white;
-    }
-    h2{
-        font-family: AmericanTypewriter;
-        color: white;
-    }
-    img{
-        margin-top: 200px;
-        opacity: 0.89;
-        border-radius: 100%;
-        max-width: 300px;
-        max-height: 300px;
+    background: $col1;
+    min-height: 100vh;
+    max-height: 100%;
+    padding: 60px;
+    .page1-box{
+        background: $w;
+        height: 100%;
+        width: 400px;
+        margin: auto;
+        padding: 30px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        h1{
+            font-family: AmericanTypewriter;
+            font-size: 60px;
+            color: $col2;
+        }
+        h2{
+            color: $col2;
+        }
+        img{
+            opacity: 0.89;
+            border-radius: 100%;
+            max-width: 300px;
+            max-height: 300px;
+        }
     }
 }
 .page1-contact{
@@ -33,31 +45,33 @@ img{
         display: inline-block;
         padding-right: 55px;
         li{
-            font-size: 40px;
+            font-size: 45px;
             margin: 10px;
             display: inline-block;
             a{
-                color: #244345;
+                color: $col2;
                 &:hover{
-                color: #40333A;
+                color: $col1;
                 }
             }
         }
     }
 }
 .resume-button{
-    background: #244345;
+    background: $col2;
     color: white;
     font-family: AmericanTypewriter;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     &:hover{
-        background: #E1DDC6;
-        color: #244345;
+        background: $col1;
+        color: $col2;
     }
 }
 .page2{
     height: 100%;
-    background: #E1DDC6;
-    color: #244345;
+    background: $col2;
+    background-attachment: fixed;
+    color: #ecf0f1;
     h1{
         font-size: 90px;
         font-family: AmericanTypewriter;
@@ -77,11 +91,11 @@ img{
     }
 }
 .page3{
-    background: #244345;
+    background: $col3;
     height: 100%;
     padding: 20px;
     h1{
-        color: #E1DDC6;
+        color: $w;
         font-family: AmericanTypewriter;
         font-size: 90px;
     }
@@ -92,10 +106,10 @@ img{
     }
 }
 .page4{
-    background: #E1DDC6;
+    background: $col4;
     h2{
         font-family: AmericanTypewriter;
-        color: #244345;
+        color: $col3;
     }
     ul{
         list-style: none;
@@ -104,9 +118,9 @@ img{
             font-size: 20px;
             margin: 10px;
             a{
-                color: #244345;
+                color: $col3;
                 &:hover{
-                color: #40333A;
+                color: $col3;
                 }
             }
         }
@@ -114,9 +128,25 @@ img{
 }
 @media (max-width: 768px){
     .page1{
-        background-attachment: inherit;
-        h1{
-            font-size: 60px;
+        .page1-box{
+            height: 100%;
+            width: 100%;
+            h1{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+    .page1-contact{
+        ul{
+            li{
+                font-size: 25px;
+                margin: 0;
+                padding: 3px;
+                padding-top: 18px;
+            }
         }
     }
     .page3{
