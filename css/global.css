@@ -6,6 +6,10 @@ img {
   width: 100%;
 }
 
+h1, h2, h3, h4, h5, p {
+  font-family: 'Lato', sans-serif;
+}
+
 .page1 {
   background: #555557;
   min-height: 100vh;
@@ -23,12 +27,13 @@ img {
 }
 
 .page1 .page1-box h1 {
-  font-family: AmericanTypewriter;
+  font-family: 'Lato', sans-serif;
   font-size: 60px;
   color: #ED6A5A;
 }
 
 .page1 .page1-box h2 {
+  font-family: 'Lato', sans-serif;
   color: #ED6A5A;
 }
 
@@ -63,12 +68,38 @@ img {
   background: #ED6A5A;
   color: white;
   font-family: AmericanTypewriter;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
 }
 
 .resume-button:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   background: #555557;
   color: #ED6A5A;
+}
+
+.project-buttons-section {
+  padding: 10px;
+}
+
+.project-buttons-section a:hover {
+  text-decoration: none;
+}
+
+.project-buttons {
+  padding: 5px;
+  background-color: #5CA4A9;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 110%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.project-buttons:hover {
+  text-decoration: none;
+  background: #54969A;
+  color: white;
 }
 
 .page2 {
@@ -80,7 +111,7 @@ img {
 
 .page2 h1 {
   font-size: 90px;
-  font-family: AmericanTypewriter;
+  font-family: 'Lato', sans-serif;
 }
 
 .page2 ul {
@@ -102,19 +133,31 @@ img {
 .page3 {
   background: #5CA4A9;
   height: 100%;
-  padding: 20px;
+  padding-left: 70px;
+}
+
+.page3 .project-section {
+  padding-left: 100px;
+}
+
+.page3 .projects {
+  background: white;
+  padding: 5px;
+  margin: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.page3 .projects:hover {
+  box-shadow: 0 10px 20px #34495E;
+}
+
+.page3 .projects .project-images img {
+  height: 300px;
 }
 
 .page3 h1 {
   color: white;
-  font-family: AmericanTypewriter;
   font-size: 90px;
-}
-
-.page3 img {
-  padding: 5px;
-  width: 100%;
-  height: 500px;
 }
 
 .page4 {
@@ -122,7 +165,7 @@ img {
 }
 
 .page4 h2 {
-  font-family: AmericanTypewriter;
+  font-family: 'Lato', sans-serif;
   color: #5CA4A9;
 }
 
@@ -144,7 +187,7 @@ img {
   color: #5CA4A9;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .page1 .page1-box {
     height: 100%;
     width: 100%;
@@ -161,7 +204,16 @@ img {
     padding: 3px;
     padding-top: 18px;
   }
+  .page3 {
+    padding-left: 0;
+  }
   .page3 img {
     height: auto;
+  }
+  .page3 .project-section {
+    padding-left: 10px;
+  }
+  .project-buttons {
+    font-size: 80%;
   }
 }
