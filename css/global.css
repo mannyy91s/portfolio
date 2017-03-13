@@ -152,6 +152,10 @@ h1, h2, h3, h4, h5, p {
   height: 300px;
 }
 
+.page3 .projects .project-description {
+  height: 50px;
+}
+
 .page3 h1 {
   color: white;
   font-size: 90px;
